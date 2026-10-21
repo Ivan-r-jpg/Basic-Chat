@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Простий Чат</title>
+</head>
+
+<body>
+
+    <h2>Чат</h2>
+
+    <div class="main-container">
+        <form id="chatForm">
+            <fieldset>
+            <legend>Введіть повідомлення:</legend>
+            <input type="text" id="username" placeholder="Ваше ім'я">
+            <textarea id="messageText" placeholder="Текст повідомлення" rows="3"></textarea>
+            <button type="button" id="sendBtn" onclick="sendMessage()">Надіслати</button>
+            <div class="controls">
+                <button type="button" id="openBtn">Підключитися</button>
+                <button type="button" id="closeBtn">Відключитися</button>
+            </div>
+            </fieldset>
+        </form>
+        <div id="chat"></div>
+    </div>
+</body>
+
+</html>
